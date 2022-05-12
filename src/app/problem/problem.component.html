@@ -1,0 +1,19 @@
+<header>
+    <div class="icon">
+      <mat-icon>bug_report</mat-icon>
+    </div>
+            <h2>Problems</h2>
+</header>
+<div *ngFor="let problem of problems">
+    <div class="problem">
+        <div>
+            <p class="status" [ngStyle]="{'background-color':problem.status === 'report' ? '#ff0005' : '#11c900' }"></p>
+            <span *ngIf="currentUser && currentUser.userType !== 'Tenant' " mat-button [matMenuTriggerFor]="menu">Edit</span>
+            <mat-menu #menu="matMenu">
+            <p mat-menu-item>Done</p>
+            </mat-menu>
+            </div>
+    <p class="title"><label>Title : </label> {{problem.title}}</p>  
+    <p> <label>Description : </label> {{problem.description}}</p>
+</div>
+</div>

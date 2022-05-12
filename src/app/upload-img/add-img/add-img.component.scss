@@ -1,0 +1,26 @@
+img{
+    height: 100px ;
+    width : 100px ;
+    border-radius: 15px;
+ 
+}
+mat-icon{
+    background-color: rgba(255, 255, 255, 0.89);
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    padding: 2%;
+    text-align: center;
+  
+}
+mat-icon:hover{
+background-color: rgb(139, 146, 146);
+border-radius: 50%;
+}
+mat-progress-spinner{
+    position: relative;
+    z-index: 2;
+    top: -70px;
+    left: -35px;
+}

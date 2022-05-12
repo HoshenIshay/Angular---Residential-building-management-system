@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-title>Add Images</mat-card-title>
+   <div class="flex-container row" >
+    <div *ngFor="let item of images">
+       <app-add-img (deleteEvent)="delete($event)" [srcFromParent]="item.url"></app-add-img> 
+    </div>    
+    </div>
+    <label for="file-upload" class="file-upload">
+     Upload Images
+    </label>
+    <input
+    multiple
+    (change)="onSelct($event)" 
+    accept="image/*"
+    id="file-upload" 
+    type="file"/>
+    </mat-card>

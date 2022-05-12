@@ -1,0 +1,15 @@
+<header>
+    <div class="icon">
+      <mat-icon>today</mat-icon>
+    </div>
+            <h2>Notice Board</h2>
+</header>
+<div *ngFor="let message of publicMessages ">
+    <div class="wrapper">
+      <div class="message">
+        <p><label>From : </label> {{message.userName}}</p>
+        <p><label>Title:</label>  {{message.title}}</p>
+        <p><label>Description : </label> {{message.description}}</p>  
+      </div>
+    </div>
+</div>

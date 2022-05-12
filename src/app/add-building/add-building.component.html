@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <h1>Add building</h1>
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+      <div class="input">
+        <div class="label">Address</div>
+        <input placeholder="Address"
+        formControlName="address" type="text">
+  
+        <div class="label">Several floors</div>
+        <input type="text" placeholder="Several floors" formControlName="SeveralFloors">
+
+        <div class="label">Number of apartments on the floor</div>
+        <input type="text" placeholder="Number of apartments on the floor" formControlName="NumberOfSApartmentsOnTheFloor">
+
+      </div>
+      
+      <button>Add building</button>

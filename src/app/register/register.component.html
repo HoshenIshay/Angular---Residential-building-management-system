@@ -1,0 +1,34 @@
+<div class="wrapper">
+  <h1>Register</h1>
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+      <div class="input">
+        <div class="label">Full name</div>
+        <input placeholder="Full name"
+        formControlName="fullname" type="text">
+  
+        <div class="label">Password</div>
+        <input type="password" placeholder="Min 3 digit" formControlName="password">
+
+        <div class="label">Email</div>
+        <input type="email" placeholder="Email" formControlName="email">
+
+        <div class="label">Phone</div>
+        <input type="phone" placeholder="Phone" formControlName="phone">
+
+        <div>
+          <label for=""></label>
+          <mat-radio-group formControlName="userType" >
+            <mat-radio-button *ngFor="let type of typeList" [value]="type">
+              {{type}}
+            </mat-radio-button>
+          </mat-radio-group>
+        </div>
+
+      </div>
+
+  
+      <button>Register</button>
+    </form>
+    <div>
+      
+    </div>

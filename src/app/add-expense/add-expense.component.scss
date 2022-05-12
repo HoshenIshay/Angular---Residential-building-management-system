@@ -1,0 +1,17 @@
+:host{
+    h1{
+        color: #8a95ff;
+        text-align: center;
+      }
+      button{
+        width: 200px; 
+        margin-top: 8%;
+        } 
+        textarea{
+            height: 200px;
+            width: 200px;
+        }
+        .mat-radio-button ~ .mat-radio-button {
+            margin: 16px;
+          }
+}

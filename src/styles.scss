@@ -1,0 +1,85 @@
+@import "assets/styles/global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+:host{
+    background-color: rgb(66, 68, 87 );
+}
+html { 
+    margin: 5;
+    // font-family: Roboto, "Helvetica Neue", sans-serif ;
+    font: 'Open Sans', sans-serif;
+    background-color: rgb(66, 68, 87 ) ;
+    color: #fff;
+}
+input {
+    background-color: #282932;
+    border: 1px solid #37393f;
+    border-radius: 24px;
+    color: currentColor;
+    padding: 5;
+    margin: 0;
+    max-width: 100%;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+}
+button{
+    border-radius: 24px;
+    border: none;
+    width: 150px;
+    height: 40px;
+    background-color: #8a95ff;
+    color: #fff;
+}
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+    border-color:#8a95ff !important; 
+  }
+  .mat-radio-button.mat-accent .mat-radio-inner-circle{
+    color:#8a95ff !important;
+    background-color:#8a95ff !important;
+  }
+  .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
+    background-color:#8a95ff !important;
+  }
+  textarea{
+  border-radius: 24px;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #20212a; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  h1{
+    font-weight: 500;
+  }
+  label{
+    font-weight: 600;
+}
+header{
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap : 5px ;
+   grid-template-areas: 
+   "icon-header"
+   "icon sub-header" ;
+}
+header > .icon{
+  display: grid;
+  place-content: center;
+   background-color: rgb(32, 33, 42);
+   border-radius: 10px;
+   width: 40px;
+   height: 40px;
+   color: rgb(138, 149, 255);
+}
+header > h2{
+   align-self: flex-end;
+}

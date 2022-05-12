@@ -1,0 +1,23 @@
+  :host{
+ position: absolute;
+ top: 20%;
+ left: 50%;
+ margin: -100px 0 0 -100px;  
+ button{
+  width: 200px; 
+  margin-top: 8%;
+  } 
+  .mat-radio-button ~ .mat-radio-button {
+    margin: 16px;
+  }
+  h1{
+    color: #8a95ff;
+    text-align: center;
+  }
+  .wrapper{
+    border: 1px solid #37393f;
+    border-radius: 24px;
+    padding: 10%;
+    width: 220px;
+  }
+ }

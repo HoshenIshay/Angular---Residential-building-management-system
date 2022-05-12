@@ -1,0 +1,50 @@
+:host{
+    .donut-ring {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+    }
+    .ring {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+    }
+    .ring.red {
+        top: 0;
+        left: 0;
+        background-color: #ff9305;
+        border-radius: 100% 0 0 0;
+    }
+    .ring.blue {
+        top: 0;
+        right: 0;
+        background-color: #ff9305;
+        border-radius: 0 100% 0 0;
+    }
+    .ring.orange {
+        bottom: 0;
+        left: 0;
+        background-color: #ff9305;
+        border-radius: 0 0 0 100%;
+    }
+    .ring.green {
+        bottom: 0;
+        right: 0;
+        background-color: #ff9305;
+        border-radius: 0 0 100% 0;
+    }
+    .cutout {
+        width: 50%;
+        height: 50%;
+        background-color: #282932;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        border-radius: 50%;
+        pointer-events: none;
+    }
+    .dollar{
+        margin-left: 30%;
+    }
+}

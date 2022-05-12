@@ -1,0 +1,15 @@
+<h1>Message</h1>
+<p>for :  {{forUser.element.fullname}}</p>
+<div class="wrapper">
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+      <div class="input">
+        <div class="label">Description</div>
+        <textarea type="text" matInput formControlName="description" placeholder="Message..."></textarea>
+      </div>
+
+  
+      <button>Send</button>
+    </form>
+    <div>
+
+    </div>

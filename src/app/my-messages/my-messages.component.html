@@ -1,0 +1,13 @@
+<header>
+    <div class="icon">
+      <mat-icon>question_answer</mat-icon>
+    </div>
+            <h2>My messages</h2>
+</header>
+<div *ngFor="let message of messages">
+    <div class="message">
+    <p> <label>From: </label> {{ message.byUserName }}</p>
+    <p> <label>Description: </label> {{message.description }}</p>
+    </div>
+
+</div>

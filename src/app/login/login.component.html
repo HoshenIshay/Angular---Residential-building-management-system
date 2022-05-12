@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <h1>Log in</h1>
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+      <div class="input">
+        <div class="label">User name</div>
+        <input placeholder="User name"
+          [formControlName]="'username'" type="text">
+        <div class="label">Password</div>
+        <input type="password" placeholder="Min 3 digit" formControlName="password">
+      </div>
+  
+      <button>Log in</button>
+    </form>
+    <div>
+    </div>

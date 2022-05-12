@@ -1,0 +1,22 @@
+:host{
+  padding: 1%;
+  table {
+    margin: 5px;
+    width: 99%;
+    padding: 2%;
+  }
+  th{
+    color: #8a95ff;
+  }
+  .mat-table{    
+    border-radius: 24px;
+    overflow:hidden !important;
+  }
+  button{
+    padding: 1.4%;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    margin: 1%;
+  }
+}

@@ -1,0 +1,14 @@
+<header>
+    <div class="icon">
+      <mat-icon>equalizer</mat-icon>
+    </div>
+            <h2>Expenses</h2>
+</header>
+<div *ngFor="let expense of expenses">
+    <div class="expense">
+    <p> <label>Price: </label> {{expense.price | currency }}</p>
+    <p> <label>Description : </label>  {{expense.description}}</p>
+    <p class="expenseType" [ngStyle]="{'background-color': expense.expenseType==='Gardening' ? '#11c900' : (expense.expenseType==='Cleanliness' ? '#ff9304' : '#ff007e') }">{{expense.expenseType}}</p>
+</div>
+</div>
+<button (click)="addExpense()" *ngIf="currentUser && currentUser.userType !== 'Tenant' ">New expense</button>

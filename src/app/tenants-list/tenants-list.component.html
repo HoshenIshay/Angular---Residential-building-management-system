@@ -1,0 +1,9 @@
+<p>Tenants : {{tenants.length}}</p>
+<input type="text" class="formControl" [(ngModel)] = "filterString"/>
+<div class="tenants">
+    <div class="tenant" *ngFor="let tenant of tenants | filterName:filterString ">
+    <p class="avatar"><img src="assets/avatar.png"></p>
+    <p class="name">{{tenant.fullname}}</p>
+    <p class="title">{{tenant.phone}} <mat-icon class="message"> message</mat-icon></p>
+</div>
+</div>

@@ -1,0 +1,14 @@
+<div class="grid-container">
+    <div *ngIf="currentUser" class="item1">
+      <div class="header"> <mat-icon class="profileIcon" (click)="profile()">account_circle</mat-icon>
+        <span class="userName"> Hi  {{currentUser.fullname}}</span>
+        <span class="messageIcon"><mat-icon>question_answer</mat-icon> {{currentUser.messages.length}}</span>
+    </div>
+
+    </div>
+
+    <div class="item4">
+      <app-user-dashboard></app-user-dashboard>
+    </div>
+  </div>
+  

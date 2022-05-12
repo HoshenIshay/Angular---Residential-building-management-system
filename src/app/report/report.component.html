@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <h1>Report</h1>
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+        <div class="label">Title</div>
+        <input placeholder="Title"
+        formControlName="title" type="text">
+      <div class="input">
+        <div class="label">Description</div>
+        <textarea type="text" matInput formControlName="description" placeholder="Report..."></textarea>
+      </div>
+
+  
+      <button>Report</button>
+    </form>
+    <div>
+
+    </div>

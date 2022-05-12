@@ -1,0 +1,24 @@
+:host{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    .wrapper{
+        border: 1px solid rgb(55, 57, 63);
+        border-radius: 24px;
+        padding: 10%;
+        width: 220px;
+      }
+      button{
+        width: 200px; 
+        margin-top: 8%;
+        } 
+    textarea{
+        height: 200px;
+        width: 200px;
+    }
+    h1{
+        color: #8a95ff;
+        text-align: center;
+      }
+}

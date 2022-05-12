@@ -1,0 +1,13 @@
+<header>
+<div class="icon">
+    <mat-icon>business</mat-icon>
+  </div>
+          <h2>My Building</h2>
+</header>
+<div class="wrapper">
+  <div  *ngFor="let myBuilding of buildings">
+  <p> <label>Address : </label> {{myBuilding.address}}</p>
+  <p> <label>Floors : </label> {{myBuilding.SeveralFloors}}</p>
+  <p> <label>Tenants : </label> {{myBuilding.SeveralFloors * myBuilding.NumberOfSApartmentsOnTheFloor}}</p>
+  </div>
+  </div>

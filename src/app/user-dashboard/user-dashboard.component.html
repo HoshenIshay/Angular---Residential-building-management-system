@@ -1,0 +1,47 @@
+<body>
+    <main>
+      <nav>
+        <mat-icon routerLink="/Profile" class="nav__link">account_circle</mat-icon>
+        <mat-icon routerLink="/MyMessages" class="nav__link">question_answer</mat-icon>
+        <mat-icon routerLink="/Tenants" class="nav__link">supervisor_account</mat-icon>
+        <mat-icon routerLink="/Problem" class="nav__link">bug_report</mat-icon>
+        <mat-icon routerLink="/Expenses" class="nav__link">equalizer</mat-icon>
+        <mat-icon routerLink="/BulletinBoard" class="nav__link">today</mat-icon>
+        <mat-icon routerLink="/Report" class="nav__link">assignment</mat-icon>
+      </nav>
+      <article>
+         <header><p>Home</p></header> 
+         <div class="grid">
+          <section class="my-team">
+            <app-tenants-list></app-tenants-list>
+          </section>
+          <section class="messages">
+            <button><mat-icon (click)="message()" class="messageIcon">message</mat-icon></button>
+          </section>
+          <section class="card my-work">
+            <div class="myBuilding">
+              <app-my-building></app-my-building>
+            </div>
+          </section>
+          <section class="project-1">
+            <div class="expenses">
+              <app-expenses></app-expenses>
+            </div>
+          </section>
+          <section class="project-2">
+            <div class="noticeBoard">
+              <app-bulletin-board></app-bulletin-board>
+            </div>
+          </section>
+          <section class="project-3">
+            <div class="wallet">
+              <app-wallet></app-wallet>
+            </div>
+          </section>
+          <section class="my-day">
+            <div class="problems"><app-problem></app-problem></div>
+          </section>
+        </div>
+      </article>
+    </main>
+      </body>

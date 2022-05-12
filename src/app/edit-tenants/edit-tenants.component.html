@@ -1,0 +1,27 @@
+<h1>Edit tenant</h1>
+<div class="wrapper">
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+      <div class="input">
+        <div class="label">Full name</div>
+        <input placeholder="Full name"
+        [(ngModel)] = this.userElement.element.fullname
+          [formControlName]="'fullname'" type="text">
+
+        <div class="label">Email</div>
+        <input type="email" placeholder="Email" 
+        [(ngModel)] = this.userElement.element.email
+        formControlName="email">
+
+        <div class="label">Phone</div>
+        <input type="phone" placeholder="Phone"
+        [(ngModel)] = this.userElement.element.phone 
+        formControlName="phone">
+
+      </div>
+
+  
+      <button>Save</button>
+    </form>
+    <div>
+        
+    </div>
