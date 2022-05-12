@@ -1,4 +1,4 @@
 # Angular Residential building management system
-npm i 
+<h5>npm i<h5/> 
 npn start 
 npx json-server --watch db.json
